@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Community Hub -INDIA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎓 Solar Community Hub -India</h1>
+            <p>Studets please  Search your Certificate and Download </p>
+            
+            <div class="setup-instructions">
+                <h3> Thanks for participate</h3>
+                <ul>
+                    <td>1.Enter the name you used while taking the test; the certificate will also be available with the same name.</td>
+                    <br>
+                    <td>2.If a student has not taken the exam, their certificate will not be available.</td>
+            </div>
+        </div>
+
+        <div class="search-card">
+            <h2>🔍 Search Your Certificate</h2>
+            <form id="searchForm" class="search-form">
+                <div class="form-group">
+                    <label>📝 Student Name:</label>
+                    <input type="text" id="studentName" placeholder="Enter student name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>📚 Class:</label>
+                    <select id="studentClass" required>
+                        <option value="">Select Class</option>
+                        <option value="5">Class 5</option>
+                        <option value="6">Class 6</option>
+                        <option value="7">Class 7</option>
+                        <option value="8">Class 8</option>
+                        <option value="9">Class 9</option>
+                        <option value="10">Class 10</option>
+                        <option value="11">Class 11</option>
+                        <option value="12">Class 12</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>🎯 Section :</label>
+                    <select id="studentSection" required>
+                        <option value="">Select Section</option>
+                        <option value="A">Section A</option>
+                        <option value="B">Section B</option>
+                        <option value="C">Section C</option>
+                        <option value="D">Section D</option>
+                        <option value="E">Section E</option>
+                        <option value="F">Section F</option>
+                        <option value="G">Section G</option>
+                        <option value="H">Section H</option>
+                        <option value="I">Section I</option>
+                        <option value="J">Section J</option>
+                        <option value="K">Section K</option>
+                        <option value="L">Section L</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>📜 Certificate Type :</label>
+                    <select id="certificateType">
+                        <option value="">Types </option>
+                        <option value="certificate">Certificate</option>
+                    </select>
+                </div>
+            </form>
+
+            <div class="btn-container">
+                <button type="button" class="btn" onclick="searchCertificates()">
+                    🔍 Search Certificate
+                </button>
+                <button type="button" class="btn btn-clear" onclick="clearSearch()">
+                    🗑️ Clear Form
+                </button>
+            </div>
+        </div>
+
+        <div class="results-section">
+            <h2>📋 Search Results</h2>
+            <div id="searchResults">
+                <div class="no-results">
+                    <p>🔍 Fill out the form above to search for your certificate </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for full-size image view -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
