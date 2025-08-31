@@ -42,7 +42,7 @@ body {
     border-radius: 10px;
     margin-top: 15px;
     backdrop-filter: blur(10px);
-    justify-items: start;
+    list-style: georgian inside url("/shared-assets/images/examples/rocket.svg");
 }
 
 .search-card {
@@ -382,4 +382,5 @@ body {
     display: inline-block;
 
 }
+
 
