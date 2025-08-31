@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -379,4 +379,5 @@ body {
     font-family: monospace;
     margin: 5px;
     display: inline-block;
+
 }
