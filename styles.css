@@ -37,7 +37,7 @@ body {
 }
 
 .instruction {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.0);
     max-width: 800px;
             margin: 0 auto;
             background: white;
@@ -383,6 +383,7 @@ body {
     display: inline-block;
 
 }
+
 
 
 
